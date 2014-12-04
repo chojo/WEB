@@ -1,0 +1,33 @@
+default: &default
+  adapter: sqlserver
+  dataserver: localhost\SQLEXPRESS
+  timeout: 5000
+  encoding: utf-8
+  username: vagrant
+  password: vagrant
+
+development:
+  <<: *default
+  database: eda_rh_dev
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: eda_rh_test
+
+production:
+  <<: *default
+  database: eda_rh_prod
+
+# MSSQLServer Settings
+ror_settings:
+  adapter: sqlserver
+  mode: dblib
+  database: RoR-Settings
+  dataserver: EDACV100538\SQL_PROD03
+  username: ror
+  password: sharepoint4never
+  encoding: utf-8
+  timeout: 5000
