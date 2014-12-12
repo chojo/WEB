@@ -15,6 +15,7 @@ gem 'font-awesome-rails', '~> 4.2.0.0'
 gem 'simple_form', '3.1.0.rc2'
 gem 'haml'
 gem 'draper'
+gem 'turbolinks'
 gem 'bootstrap-datepicker-rails'
 
 # Data Input & Export
