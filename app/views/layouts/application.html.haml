@@ -1,0 +1,19 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title
+      WEB PA | #{yield(:title)}
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{'http-equiv' => "X-UA-Compatible", 'content' => "IE=edge"}
+    = csrf_meta_tag
+    = stylesheet_link_tag 'application', media: 'all'
+  %body
+    /= render 'layouts/header'
+    /= render 'layouts/navigation'
+    .content
+      /= render 'layouts/flashes'
+      = yield
+    = javascript_include_tag 'application'
+
