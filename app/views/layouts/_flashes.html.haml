@@ -1,0 +1,5 @@
+- if flash.present?
+  #flash
+    - flash.each do |key, message|
+      .alert{:class => key == 'error' ? 'alert-danger' : "alert-#{key}"}
+        = message

@@ -1,0 +1,23 @@
+body {
+  padding-top: $header-height;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+abbr[title] {
+  border: none;
+}
+
+.navbar-fixed-top {
+  top: $header-height;
+}
+
+ul.navbar-nav {
+  font-weight: 600;
+}
+
+div.navbar {
+  padding-left: 15px;
+}

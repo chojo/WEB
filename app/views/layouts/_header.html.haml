@@ -1,0 +1,21 @@
+.header
+  .row
+    .pull-left
+      .logo.visible-xs-block
+        = image_tag 'CH-logo-small.png', size: '32x56'
+      .logo.hidden-xs
+        = image_tag 'CH-logo.png', size: '230x56'
+
+    .title
+      %h3 Reisehinweise
+      %h4 Administration
+
+    .pull-right.action-right
+      %form.search.hidden-xs{:role => "search"}
+        .input-group
+          %input#srch-term.form-control{:name => "srch-term", :placeholder => "Search", :type => "text"}/
+          .input-group-btn
+            %button.btn.btn-default{:type => "submit"}
+              %i.glyphicon.glyphicon-search
+
+      /= link_to logout_path do

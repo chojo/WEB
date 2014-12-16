@@ -1,0 +1,18 @@
+h3.chapter {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.show_column {
+  width: 545px;
+}
+
+.language-switch li {
+  margin-right: 15px;
+  border: 1px solid #ddd;
+  border-radius: $border-radius-base;
+
+  &.active {
+    border: none;
+  }
+}
